@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.fishcab.DriverController">
+    <left>
+        <AnchorPane prefHeight="500.0" prefWidth="88.0" style="-fx-background-color: #462c89;" BorderPane.alignment="CENTER">
+            <children>
+                <Label contentDisplay="CENTER" layoutX="36.0" layoutY="55.0" prefHeight="54.0" prefWidth="90.0" text="FishCab" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font>
+                </Label>
+                <Button fx:id="btCustomer" contentDisplay="CENTER" layoutX="-4.0" layoutY="141.0" mnemonicParsing="false" onAction="#handleCLicks" prefHeight="39.0" prefWidth="172.0" style="-fx-background-color: #462c89;" text="Customer List" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btDriver" layoutX="-4.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleCLicks" prefHeight="39.0" prefWidth="171.0" style="-fx-background-color: #462c89;" text="Driver List" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            <Button fx:id="driverLogoutBtn" layoutX="35.0" layoutY="229.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="92.0" text="Log Out" />
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="500.0" prefWidth="669.0" style="-fx-background-color: #ece9e9;" BorderPane.alignment="CENTER">
+            <children>
+                <HBox fx:id="banner" layoutY="61.0" prefHeight="64.0" prefWidth="707.0" style="-fx-background-color: #9f76ff;">
+                    <children>
+                        <Label fx:id="list" alignment="CENTER" contentDisplay="CENTER" prefHeight="59.0" prefWidth="177.0" text="Driver List" textFill="WHITE">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <StackPane layoutX="14.0" layoutY="150.0">
+                    <children>
+                        <GridPane fx:id="pnCustomer" prefHeight="313.0" prefWidth="694.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="159.4" minHeight="10.0" prefHeight="40.20001831054688" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="305.79999389648435" minHeight="10.0" prefHeight="294.5999816894531" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <TableView fx:id="cl_tableView" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="285.0" prefWidth="672.0" GridPane.rowIndex="1">
+                                    <columns>
+                                        <TableColumn fx:id="cl_customerCol" prefWidth="148.7999391555786" text="Customer" />
+                                        <TableColumn fx:id="cl_statusCol" minWidth="0.0" prefWidth="90.39996337890625" text="Status" />
+                                        <TableColumn fx:id="cl_capacityCol" minWidth="0.0" prefWidth="74.40003967285156" text="Capacity" />
+                                        <TableColumn fx:id="cl_eatCol" minWidth="0.0" prefWidth="77.5999755859375" text="EAT" />
+                                        <TableColumn fx:id="cl_pulCol" minWidth="0.0" prefWidth="111.19998168945312" text="Pickup Location" />
+                                        <TableColumn fx:id="cl_destinationCol" minWidth="0.0" prefWidth="73.5999755859375" text="Destination" />
+                                        <TableColumn fx:id="cl_priceCol" minWidth="0.8001708984375" prefWidth="94.4000244140625" text="Price" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </GridPane>
+                        <GridPane fx:id="pnDriver" prefHeight="314.0" prefWidth="546.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="159.4" minHeight="10.0" prefHeight="40.20001831054688" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="305.79999389648435" minHeight="10.0" prefHeight="294.5999816894531" valignment="CENTER" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <TableView fx:id="dl_tableView" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="285.0" prefWidth="672.0" GridPane.rowIndex="1">
+                                    <columns>
+                                        <TableColumn fx:id="dl_driverCol" minWidth="20.0" prefWidth="224.8000545501709" text="Driver" />
+                                        <TableColumn fx:id="dl_statusCol" prefWidth="86.39996337890625" text="Status" />
+                                        <TableColumn fx:id="dl_capacityCol" prefWidth="56.800079345703125" text="Capacity" />
+                                        <TableColumn fx:id="dl_coordinateCol" prefWidth="93.5999755859375" text="Location" />
+                                        <TableColumn fx:id="dl_ratingCol" prefWidth="52.000030517578125" text="Rating" />
+                                        <TableColumn fx:id="dl_customerCol" prefWidth="156.00006103515625" text="Customer" />
+                                    </columns>
+                                    <GridPane.margin>
+                                        <Insets />
+                                    </GridPane.margin>
+                                </TableView>
+                            </children>
+                        </GridPane>
+                    </children>
+                </StackPane>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

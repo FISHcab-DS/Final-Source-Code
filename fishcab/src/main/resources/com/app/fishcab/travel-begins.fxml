@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="500.0" maxWidth="850.0" minHeight="500.0" minWidth="850.0" spacing="20.0" style="-fx-background-color: rgb(222, 236, 255);" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.fishcab.TravelBeginsController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label text="Travel Begins" textAlignment="CENTER">
+            <font>
+                <Font name="Impact" size="24.0" />
+            </font>
+        </Label>
+        <AnchorPane prefHeight="456.0" prefWidth="810.0">
+            <children>
+                <GridPane alignment="CENTER" layoutX="47.0" prefHeight="110.0" prefWidth="716.0" style="-fx-background-color: white; -fx-background-insets: 5; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, grey, 10, 0, 4, 4);">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label prefHeight="18.0" prefWidth="38.0" text="Name:" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font></Label>
+                        <Label prefHeight="18.0" prefWidth="96.0" text="Pickup Location:" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font></Label>
+                        <Label prefHeight="18.0" prefWidth="130.0" text="Expected Arrival Time:" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font></Label>
+                        <Label prefHeight="18.0" prefWidth="55.0" text="Capacity:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font></Label>
+                        <Label prefHeight="18.0" prefWidth="122.0" text="Destination Location:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font></Label>
+                        <Label prefHeight="18.0" prefWidth="33.0" text="Price:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font></Label>
+                        <Label prefHeight="20.0" prefWidth="116.0" text="Request Details:">
+                            <font>
+                                <Font name="Cooper Black" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="request_name_label" text="request_name_label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="request_pul_label" text="request_pul_label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="request_dl_label" text="request_dl_label" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Label fx:id="request_capacity_label" text="request_capacity_label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label fx:id="request_eat_label" text="request_eat_label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="request_price_label" text="request_price_label" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </GridPane>
+                <GridPane alignment="CENTER" layoutX="47.0" layoutY="125.0" prefHeight="91.0" prefWidth="716.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-background-insets: 5; -fx-effect: dropshadow(three-pass-box, grey, 10, 0, 4, 4);">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label prefHeight="18.0" prefWidth="106.0" text="Driver Details:">
+                            <font>
+                                <Font name="Cooper Black" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label prefHeight="18.0" prefWidth="38.0" text="Name:" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font></Label>
+                        <Label prefHeight="18.0" prefWidth="121.0" text="Rating:" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font></Label>
+                        <Label prefHeight="18.0" prefWidth="88.0" text="Capacity:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font></Label>
+                        <Label prefHeight="18.0" prefWidth="134.0" text="Estimated Arrival Time:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font></Label>
+                        <Label fx:id="driver_name_label" text="driver_name_label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="driver_rating_label" text="driver_rating_label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="driver_capacity_label" text="request_capacity_label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label fx:id="driver_eat_label" text="driver_eat_label" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </padding>
+                </GridPane>
+                <AnchorPane layoutX="47.0" layoutY="238.0" prefHeight="91.0" prefWidth="716.0" style="-fx-background-color: rgb(222, 255, 246); -fx-background-radius: 10; -fx-background-insets: 5; -fx-effect: dropshadow(three-pass-box, grey, 10, 0, 4, 4);">
+                    <children>
+                        <Label layoutX="236.0" layoutY="24.0" text="Status:">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="status_label" layoutX="289.0" layoutY="23.0" prefHeight="18.0" prefWidth="191.0" text="status_label" />
+                        <Label fx:id="textLabel" layoutX="237.0" layoutY="47.0" text="Your driver will be arrived in" />
+                        <Label fx:id="min_label" layoutX="399.0" layoutY="46.0" prefHeight="18.0" prefWidth="24.0" text="min">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="435.0" layoutY="47.0" text="minutes" />
+                    </children>
+                </AnchorPane>
+                <Button fx:id="arrivedBtn" layoutX="417.0" layoutY="357.0" mnemonicParsing="false" onAction="#arrived" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: rgb(44, 163, 106);" text="Arrived" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font></Button>
+                <Button fx:id="cancelBtn" layoutX="306.0" layoutY="357.0" mnemonicParsing="false" onAction="#cancel" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: rgb(46, 2, 179);" text="Cancel" textAlignment="CENTER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
