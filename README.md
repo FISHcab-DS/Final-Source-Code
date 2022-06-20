@@ -36,7 +36,7 @@
     - 1 unit = 1 km
     - 60 km/h
     - 1 km require 1 minute to reach
-    - 1 km = $ 0.7
+    - 1 km = $ 0.25
  
   - Construction of code
   - Database setup 
