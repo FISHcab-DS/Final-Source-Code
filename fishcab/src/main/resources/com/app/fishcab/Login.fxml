@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -20,9 +21,9 @@
         <PasswordField fx:id="PasswordField" layoutX="152.0" layoutY="327.0" prefHeight="26.0" prefWidth="190.0" />
         <Button fx:id="LoginBtn" layoutX="125.0" layoutY="397.0" mnemonicParsing="false" onAction="#LoginClicked" prefHeight="30.0" prefWidth="150.0" text="Login" />
         <Button fx:id="RegisterBtn" layoutX="125.0" layoutY="443.0" mnemonicParsing="false" onAction="#RegisterClicked" prefHeight="30.0" prefWidth="150.0" text="Register" />
-        <Label layoutX="124.0" layoutY="148.0" text="FISHcab">
+        <Label layoutX="76.0" layoutY="159.0" text="&quot;Always ready to swim to your destination.&quot;">
             <font>
-                <Font name="Eras Demi ITC" size="40.0" />
+                <Font name="Eras Demi ITC" size="12.0" />
             </font>
             <textFill>
                 <LinearGradient endX="1.0" endY="1.0" startX="1.0">
@@ -85,5 +86,6 @@
                 </Label>
             </children>
         </GridPane>
+      <ImageView fx:id="logoIV" fitHeight="90.0" fitWidth="143.0" layoutX="129.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" />
     </children>
 </AnchorPane>
