@@ -7,6 +7,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -19,6 +21,9 @@ import java.util.ResourceBundle;
 import java.sql.*;
 
 public class LoginController implements Initializable {
+
+    @FXML
+    private ImageView logoIV;
 
     @FXML
     private Button LoginBtn;
@@ -52,6 +57,8 @@ public class LoginController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         RoleChoiceBox.getItems().addAll(id);
+        Image fishcab = new Image("D:/intellij file/Final-Source-Code/fishcab/src/main/java/com/app/fishcab/fishcab.png");
+        logoIV.setImage(fishcab);
     }
 
     public void LoginClicked (ActionEvent event) throws IOException {
@@ -219,40 +226,6 @@ public class LoginController implements Initializable {
             }
         }
         }
-
-        // ======================================
-
-//        if (RoleChoiceBox.getValue().equals("User")) {
-//
-//
-//            stage = (Stage) Pane.getScene().getWindow();
-//            stage.close();
-//            // open user menu interface
-//            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("UserMainMenu.fxml")));
-//            stage.setTitle("FISHcab USER");
-//            stage.setScene(new Scene(root));
-//            stage.show();
-//        }
-//
-//        if (RoleChoiceBox.getValue().equals("Driver")) {
-//            stage = (Stage) Pane.getScene().getWindow();
-//            stage.close();
-//
-//            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Driver.fxml")));
-//            stage.setTitle("FISHcab DRIVER");
-//            stage.setScene(new Scene(root));
-//            stage.show();
-//        }
-//
-//        if (RoleChoiceBox.getValue().equals("Administrator")) {
-//            stage = (Stage) Pane.getScene().getWindow();
-//            stage.close();
-//
-//            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("AdministratorMainMenu.fxml")));
-//            stage.setTitle("FISHcab ADMIN");
-//            stage.setScene(new Scene(root));
-//            stage.show();
-//        }
     }
 
     public void RegisterClicked (ActionEvent event) throws IOException {
