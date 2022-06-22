@@ -62,20 +62,6 @@ public class SelectDriverListController implements Initializable {
     int ratingCount;
     String rating;
 
-//    public int getTotalMinutes(String a) {
-//        String[] time_arr = a.split(":");
-//        int hour_1 = Integer.parseInt(time_arr[0]);
-//        int min_1 = Integer.parseInt(time_arr[1]);
-//
-//        min_1 += hour_1 * 60;
-//
-//        return min_1;
-//    }
-//
-//    public int getTimeTaken(int CT, int EAT) {
-//        return EAT - CT;
-//    }
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         name_label.setText(Request.getName().toUpperCase());
