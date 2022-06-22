@@ -1,6 +1,6 @@
 <header>
   <h1 align="center">FISHcab Data Structure Assignment 2021/2022</h2>
-  <h2 align="center" href="https://ibb.co/NxS46CC"><img src="https://i.ibb.co/NxS46CC/zoomed-removebg-preview.png" alt="FISHcab" border="0"></a>
+  <h2 align="center" href="https://ibb.co/NxS46CC"><img src="https://i.ibb.co/F6VPb33/zoomed-removebg-preview.png" alt="FISHcab"></a>
 </header>
 
 ## Week 9
