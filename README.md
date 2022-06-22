@@ -1,4 +1,7 @@
-# FISHcab Data Structure Assignment 2021/2022
+<header>
+  <h1 align="center">FISHcab Data Structure Assignment 2021/2022</h2>
+  <h2 align="center" href="https://ibb.co/NxS46CC"><img src="https://i.ibb.co/NxS46CC/zoomed-removebg-preview.png" alt="FISHcab" border="0"></a>
+</header>
 
 ## Week 9
 
@@ -34,9 +37,8 @@
 
   - Unit setting 
     - 1 unit = 1 km
-    - 60 km/h
-    - 1 km require 1 minute to reach
-    - 1 km = $ 0.25
+    - 1 unit = 0.08 minute
+    - 1 unit = $ 0.25
  
   - Construction of code
   - Database setup 
